@@ -9,7 +9,8 @@ const requireAuth: string[] = [
   "/persona",
   "/prompt"
 ];
-const requireAdmin: string[] = ["/reporting"];
+const requireAdmin: string[] = ["/reporting",
+                               "/extensions",];
 
 export async function middleware(request: NextRequest) {
   const res = NextResponse.next();
